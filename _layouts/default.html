@@ -17,25 +17,33 @@
         {{ page.title }} | {{ site.title }}
       {% endif %}
     </title>
-    <link rel="stylesheet" href="{{ site.github.url }}/assets/css/all.css">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/all.css' | relative_url }}">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    <!-- Use Atom -->
+    <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     {% feed_meta %}
-    <script type="text/javascript" async
-      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
-    </script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
     {% include analytics.html %}
-    <!-- Use Jekyll SEO plugin -->
     {% seo %}
   </head>
   <body>
+    <header>
+      <img src="{{ '/assets/img/logo.png' | relative_url }}" alt="Logo" style="height: 50px;">
+      <nav>
+        {% for item in site.data.settings.menu %}
+          <a href="{{ site.github.url }}/{{ item.url }}">{{ item.name }}</a>
+        {% endfor %}
+      </nav>
+    </header>
     <div class="site-container">
-      {% include header.html %}
       {{ content }}
-      {% include footer.html %}
     </div>
+    <footer>
+      {% include footer.html %}
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </body>
 </html>

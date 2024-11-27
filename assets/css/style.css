@@ -1,0 +1,37 @@
+/* Basic Reset */
+body, h1, h2, h3, h4, h5, h6, p, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #f8f9fa; /* Light grey background, adjust the color as needed */
+    padding: 20px 0; /* Increase padding for aesthetic spacing */
+    border-bottom: 1px solid #e1e1e1; /* Adds a subtle border for separation */
+    text-align: center; /* Centers the content in the header */
+}
+
+/* Logo Styling */
+header img {
+    height: 80px; /* Increase the height of the logo */
+    margin-bottom: 10px; /* Reduce space below the logo to bring nav closer */
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: center; /* Centers the navigation links horizontally */
+    align-items: center; /* Align items in vertical center */
+    gap: 20px; /* Adds space between each navigation link */
+}
+
+nav a {
+    text-decoration: none; /* Removes underline from links */
+    color: #333; /* Dark grey color for the text, easier on the eyes */
+    font-weight: bold; /* Makes the font bold */
+}
+
+nav a:hover {
+    color: #0056b3; /* Color when hovered */
+}
