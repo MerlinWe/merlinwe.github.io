@@ -1,0 +1,80 @@
+#-------------------------------
+# General Site Settings
+
+menu:
+- {name: 'Consulting', url: ''}
+- {name: 'Teaching',     url: ''}
+- {name: 'Portfolio',    url: ''}
+- {name: 'Research',  url: ''}
+- {name: 'About',  url: ''}
+- {name: 'Contact',  url: ''}
+
+#-------------------------------
+# Consulting Section Section
+
+Data Science:
+- {name: 'Project One',   url: 'proj-1'}
+
+#-------------------------------
+# Teaching Section Section
+
+Courses:
+- {name: 'Project One',   url: 'proj-1'}
+
+#-------------------------------
+# Portfolio Section Section
+
+Projects:
+- {name: 'Project One',   url: 'proj-1'}
+
+#-------------------------------
+# Research Section Section
+
+Publications:
+- {name: 'Project One',   url: 'proj-1'}
+
+#-------------------------------
+# About Section Section
+
+Vita:
+- {name: 'Project One',   url: 'proj-1'}
+
+#-------------------------------
+# Contact Section
+
+social:
+- {icon: 'envelope',  link: 'mailto:mailto:merlin.s.weiss@gmail.com'}
+- {icon: 'github',    link: 'https://github.com/merlinwe'}
+- {icon: 'linkedin',  link: 'https://linkedin.com/in/merlin-weiss'}
+- {icon: 'envelope',  link: 'mailto:mailto:l.nguyen.paul@gmail.com'}
+
+# social network icons available:  'github' / 'linkedin' / 
+
+#-------------------------------
+# SEO Section
+
+# NOTE: Providing SEO information will make this website more searchable on the internet.
+
+seo:
+  description: 'Personal portfolio powered by Jekyll and GitHub Pages'
+  rel-author: 'https://plus.google.com/u/0/#'
+  rel-publisher: 'https://plus.google.com/u/0/#'
+
+#-------------------------------
+# Google Analytics Section
+
+# Analytics helps you understand who visits your website.
+# Learn more at: http://support.google.com/analytics/answer/1008065
+
+# NOTE: If you want to use Google Analytics for basic web tracking: Just uncomment and enter your UA-Code here.
+
+# If you are not using Google Analytics, please change 'google-ID' to an empty string
+google-analytics-ua: 'UA-112060364-3'
+
+#-------------------------------
+# Disqus Section
+
+# Change to true for Disqus comments
+disqus:
+  comments: false
+  disqus_shortname: ''
